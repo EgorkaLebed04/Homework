@@ -1,3 +1,3 @@
 const array = [33, 44, 55, 66];
 array[77] = 78;
-console.log("ffgfg");
+console.log(length(array));
