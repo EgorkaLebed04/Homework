@@ -21,6 +21,13 @@ let allMessages = [
 
 function getEditedInfo(list) {
     let count = list.length;
-    console.log(count);
+    let edit = 0;
+    for (let i = 0; i < count; i++) {
+        if (list[i].edited) {
+            edit++
+        }
+    }
+    let notEdit = count - edit
+    console.log(`Всего сообщений: ${count}; \nОтредактировао: ${edit}; \nНе отредактировано: ${notEdit}.`);
 }
 getEditedInfo(allMessages)
